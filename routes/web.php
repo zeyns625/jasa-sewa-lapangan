@@ -1,5 +1,12 @@
 <?php
 
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('pages.home');
+});
+
 //Route::get('/listbarang/{id}/{nama}', function ($id, $nama) {
   //  return view('list_barang', compact('id', 'nama'));
 // });
@@ -8,12 +15,12 @@
 
 //Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
 
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
 
 // Route untuk halaman Welcome (yang ada gambar dan CSS)
-Route::get('/', function () {
-   return view('welcome');
-});
+//Route::get('/', function () {
+  // return view('welcome');
+//});
 
 
 
