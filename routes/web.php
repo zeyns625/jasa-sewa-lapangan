@@ -11,24 +11,23 @@
 use Illuminate\Support\Facades\Route;
 
 // Route untuk halaman Welcome (yang ada gambar dan CSS)
-//Route::get('/', function () {
-  //  return view('welcome');
-//});
+Route::get('/', function () {
+   return view('welcome');
+});
+
+
+
+//use App\Http\Controllers\ProductController;
+
+//Route::get('/products', [ProductController::class, 'show']);
+
+
+//use App\Http\Controllers\ListBarangController;
+
+//Route::get('/barang', [ListBarangController::class, 'tampilkan']);
 
 
 
 
-
-
-
-
-
-
-
-
-
-use App\Http\Controllers\ProductController;
-
-Route::get('/products', [ProductController::class, 'show']);
 
 
